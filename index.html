@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Worker Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="agileimage.jpeg" alt="Company Icon" class="company-icon">
+            <h1>Agile People</h1>
+        </div>
+    </header>
+
+    <section class="job-description">
+        <h2>Job Description</h2>
+        <ul>
+            <li>Location: Alberton, Gauteng, South Africa</li>
+            <li>No experience required</li>
+            <li>Responsibilities include:
+                <ul>
+                    <li>Assisting with operations</li>
+                    <li>Maintaining a clean work environment</li>
+                    <li>Supporting other team members as needed</li>
+                </ul>
+            </li>
+            <li>Salary: R8000</li>
+        </ul>
+    </section>
+
+    <main>
+        <form
+            action="https://formspree.io/f/xqaknyzr"
+            method="POST"
+            enctype="multipart/form-data"
+        >
+            <h2>Application Form</h2>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="sa-citizen">Are you South African?</label>
+            <select id="sa-citizen" name="sa-citizen" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="ID">South African ID no:</label>
+            <input type="text" id="ID" name="ID" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="disability">Are you disabled?</label>
+            <select id="disability" name="disability" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Agile People. All Rights Reserved. ™</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/agilepeoplesweden/" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://x.com/AgilePeopleSwe" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.linkedin.com/company/agilepeoplecom/" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

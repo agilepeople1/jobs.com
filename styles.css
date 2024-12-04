@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2E2E2E;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    border: 2px solid white; /* Optional: adds a border for a cleaner look */
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Job Description and Form */
+.job-description, form {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; /* Adjust the form width to be more centered */
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto; /* Centers the form */
+}
+
+h2 {
+    font-weight: 600;
+}
+
+/* Label Styles */
+label {
+    font-weight: 400;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Form Fields */
+form input, form select, form button {
+    width: 100%;
+    max-width: 400px; /* Limit input width to make fields less wide */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto; /* Centers the input fields */
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    padding-bottom: 80px; /* Adds space at the bottom to prevent footer overlap */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    width: 100%;
+    position: relative; /* Change to relative so it's not fixed */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); /* White icons on dark background */
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
